@@ -3,38 +3,42 @@
 **Recorded:** 18 September 2026  
 **Repository:** `williammcada/AAC-Studio`  
 **Branch:** `main`  
-**Source-preservation checkpoint:** `76d9c85f634025b3d75970fc4d827b8467f54ba1`  
-**Record status:** Current source identity. This is not by itself a functional-test, release, or deployment claim.
+**Active release:** AAC Studio v0.4.0 · Blueprint 4.8.0 · `aac.contract.v4`  
+**Record status:** Official verified source and portable-release baseline.
 
 ## Canonical source identity
 
 | Field | Value |
 | --- | --- |
-| Canonical source path | `AAC_Studio_v0.3.html` |
-| Git blob SHA | `3bf9020d0e080c8188f93b787d4e970f26b2f264` |
-| Version represented | v0.3 source baseline; v0.4 is not established as implemented |
-| Repository source checkpoint | `76d9c85f634025b3d75970fc4d827b8467f54ba1` |
+| Canonical source | `AAC_Studio_v0.4_verified_source.zip` (complete source snapshot) |
+| Source snapshot SHA-256 | `00af7e39d1571f5ec221757002b245f171d9b13206b4728fd6254df733d1628a` |
+| Verified source provenance | Sites source commit `638cb0166ab5db37f4fe2fdc4df8bd4b971a99d5` |
+| Portable release | `AAC_Studio_v0.4.html` |
+| Portable release SHA-256 | `c191704b7467a65b654ea3d9ab2ae2af614096b0d2ecaad76877285c822ee634` |
+| Canonical GitHub verified-release commit | `acf7945e7142a7df1cbd5a1ef54b7967513a6fc0` |
+| Hosted release | `https://aac-studio-wm.wsm05.chatgpt.site` |
 
-The checkpoint above identifies the application/planning source immediately before this normalization record was committed. Later documentation-only commits do not change the preserved application bytes.
+The previous v0.3 source baseline remains preserved as `AAC_Studio_v0.3.html` at checkpoint `76d9c85f634025b3d75970fc4d827b8467f54ba1`. It is historical and is not the current implementation baseline.
 
 ## Verification status
 
 | Check | Result | Evidence / limitation |
 | --- | --- | --- |
-| Source exists in the default branch | Passed | Repository paths and Git object identities were read directly on 18 September 2026. |
-| Byte-preservation comparison | Passed | Passed — the Git blob matched the preserved Library `AAC_Studio_v0.3.html` during the 18 September 2026 audit. |
-| Functional workflow | Not run | Source preservation does not establish that imports, gameplay, reports, storage or exports work. |
-| Hosted/running application | Not run | Not verified; this normalization did not run or deploy the application. |
+| Complete source and portable release preserved | Passed | Full recoverable source snapshot and the exact delivered HTML are committed together at `acf7945e7142a7df1cbd5a1ef54b7967513a6fc0`. |
+| Release regression | Passed | 46 domain/workflow assertions, 1,711 v0.2 release assertions, 18,444 retained v0.3 bank/compatibility assertions, and 1,633 v0.4 assertions. |
+| All 24 form workflows | Passed | Packet export, valid import, review, finalization, Word package and backup restoration for G5–G7/V1–V8. |
+| Type and production build | Passed | TypeScript check and Vinext production build rerun from the synchronized canonical tree. |
+| Offline artifact | Passed | Exact verified HTML preserved; build has zero external dependencies. |
+| Hosted/running application | Passed | v0.4.0 / Blueprint 4.8.0 verified in Chrome at the hosted URL during release. |
+| Microsoft Word desktop and physical printing | Not run | Representative packages were rendered and inspected with LibreOffice; this limitation remains explicit. |
 
 ## Documentation authority
 
-- [`PROJECT-BRIEF.md`](PROJECT-BRIEF.md) records purpose, scope, must-retain behavior and verification requirements.
-- [`change-specs/INDEX.md`](change-specs/INDEX.md) identifies approved or directional change records.
-- [`MIGRATION-NOTE.md`](MIGRATION-NOTE.md) is retained as historical migration context but its pre-upload source-status language is superseded by this baseline.
-- This file controls current source identity when an older brief or note says the source was unknown or “TO ESTABLISH.”
+- [`PROJECT-BRIEF.md`](PROJECT-BRIEF.md) records permanent project-local scope and verification requirements.
+- [`change-specs/AAC_Studio_V0.4_Consolidated_Repair_Specification.md`](change-specs/AAC_Studio_V0.4_Consolidated_Repair_Specification.md) is the implemented v0.4 repair specification.
+- [`releases/0.4-release.md`](releases/0.4-release.md) records changes, tests and limits.
+- [`MIGRATION-NOTE.md`](MIGRATION-NOTE.md) and the v0.3 baseline remain historical context.
 
 ## Next gate
 
-Use the committed v0.3 source as the preservation baseline. Reconcile any future v0.4 implementation against the approved v0.4 specification before changing the app.
-
-Do not label a future commit a verified release until the exact candidate has passed the project brief’s required verification and that evidence is preserved.
+Begin v0.5 only from this verified baseline. Create and approve a versioned change specification before implementation; preserve an implementation checkpoint before extended testing; then record the exact verified candidate before release and deployment.

@@ -1,12 +1,13 @@
 # Project Brief — AAC Studio
 
-**Brief version:** 0.3 — source-baseline normalization  
+**Brief version:** 0.4 — verified release baseline  
 **Owner:** William McAda · **Credit:** A WILLIAM MCADA PRODUCT  
-**Status:** Canonical source identity reconciled; release, functional and deployment verification remain separately stated.  
+**Status:** AAC Studio v0.4.0 is the official verified baseline.  
 **Repository:** `williammcada/AAC-Studio`, branch `main`.  
-**Current running version:** Not verified. Repository source presence and byte identity are established; no hosted or functional release is inferred.  
-**Source/baseline:** Canonical preserved source: `AAC_Studio_v0.3.html`, Git blob `3bf9020d0e080c8188f93b787d4e970f26b2f264`, at source checkpoint `76d9c85f634025b3d75970fc4d827b8467f54ba1`. This establishes the uploaded v0.3 artifact only; v0.4 remains a specification/target, not the delivered build.  
-**Next work:** Use the committed v0.3 source as the preservation baseline. Reconcile any future v0.4 implementation against the approved v0.4 specification before changing the app.  
+**Current running version:** v0.4.0 at `https://aac-studio-wm.wsm05.chatgpt.site`, verified during the v0.4 release workflow.  
+**Source/baseline:** Complete v0.4 source synchronized from verified source commit `638cb0166ab5db37f4fe2fdc4df8bd4b971a99d5`. Portable release: `AAC_Studio_v0.4.html`, SHA-256 `c191704b7467a65b654ea3d9ab2ae2af614096b0d2ecaad76877285c822ee634`. The final canonical GitHub commit is recorded in `docs/MIGRATION-BASELINE.md`.  
+**Previous baseline:** `AAC_Studio_v0.3.html` at source checkpoint `76d9c85f634025b3d75970fc4d827b8467f54ba1`; retained as history, not the active source.  
+**Next work:** Begin any v0.5 work from the v0.4 verified baseline and a versioned accepted change specification.  
 
 ## 1. Purpose, audience and detailed scope
 
@@ -20,9 +21,9 @@
 - Preserve figures, correctly stacked fractions, DOCX output and PDF/print workflow. Validate scoring/answer keys and print layout separately from import structure.
 - Audit/repair tasks do not authorize fresh student-item generation or changes to locked accepted forms.
 
-## 2. This task and boundaries
+## 2. This release and boundaries
 
-This normalization establishes the exact repository source path, Git object identity and source-preservation checkpoint; creates the linked migration baseline; and retires stale pre-upload source-status wording. It does not change application behavior, approve new features, rerun product tests or convert source preservation into a release claim.
+V0.4 implements the accepted A01–A16 contract and bank repairs, preserves the original year and locked forms, and makes the verified source, portable artifact, test evidence and repair specification recoverable from the canonical repository. It does not claim that arbitrary future AI-generated items are mathematically correct or that educator review can be automated away.
 
 ## 3. Standards and adoption
 
@@ -37,7 +38,7 @@ The detailed scope above is the feature-preservation inventory. Preserve existin
 
 ## 5. Source, release and deployment discipline
 
-Canonical preserved source: `AAC_Studio_v0.3.html`, Git blob `3bf9020d0e080c8188f93b787d4e970f26b2f264`, at source checkpoint `76d9c85f634025b3d75970fc4d827b8467f54ba1`. This establishes the uploaded v0.3 artifact only; v0.4 remains a specification/target, not the delivered build.
+Canonical active source: the complete recoverable source snapshot `AAC_Studio_v0.4_verified_source.zip`. Verified source provenance: `638cb0166ab5db37f4fe2fdc4df8bd4b971a99d5`. Canonical GitHub verified-release commit: `acf7945e7142a7df1cbd5a1ef54b7967513a6fc0`. Exact portable artifact: `AAC_Studio_v0.4.html`, SHA-256 `c191704b7467a65b654ea3d9ab2ae2af614096b0d2ecaad76877285c822ee634`.
 
 See [`MIGRATION-BASELINE.md`](MIGRATION-BASELINE.md) for the authoritative source manifest and the checks actually performed.
 
@@ -47,12 +48,12 @@ Use “implementation checkpoint” or “release candidate” before verificati
 
 ## 6. Known issues, conflicts and open evidence
 
-Known historical source discrepancies and 45-finding repair tracking need reconciliation with v0.4, not assumption they are all resolved. Consolidated specification is required; this brief is not its replacement.
+The consolidated A01–A16 implementation defects are repaired and regression-covered. The remaining limits are judgment boundaries, not hidden packet-contract defects: actual item mathematics, visual meaning, DOK, workload, redundancy and ELL accessibility still require educator review.
 
 | Conflict or risk | Required handling |
 | --- | --- |
-| Historical claim versus current source | Inspect exact source; keep historical claim labeled until verified. |
-| Proposed next scope versus working baseline | Use the approved version-specific specification; do not silently promote proposals. |
+| Historical claim versus current source | The v0.4 release record and migration baseline control current identity; earlier records remain historical. |
+| Proposed next scope versus working baseline | Start from the v0.4 verified commit and use an approved version-specific specification. |
 | Other project rules | Do not import AAC quotas, other-game retry counts, or a shared backend without explicit scope. |
 | Handbook proposals | No additional exception or proposal is adopted by this brief. |
 
@@ -62,19 +63,19 @@ Validate all 24 forms, immutable finals, effective-record/hash agreement, invali
 
 | Evidence required | Result in this task |
 | --- | --- |
-| Exact source candidate/commit identified and preserved | Passed — canonical path and source checkpoint recorded in `docs/MIGRATION-BASELINE.md`; no functional verification inferred |
-| Project-specific checks above, with inputs and expected/actual results | Not run |
-| Save/import/export and malformed-input regression | Not run |
-| Intended devices and real deployment path, where applicable | Not run |
-| Version, release notes and delivered bytes agree | Not run |
+| Exact source candidate/commit identified and preserved | Passed — full source, artifact hash and verified source provenance are recorded. |
+| Project-specific checks above, with inputs and expected/actual results | Passed — all 24 G5–G7/V1–V8 forms and 360 allocation identities were exercised; see `docs/releases/0.4-release.md`. |
+| Save/import/export and malformed-input regression | Passed — packet/import/review/finalization/Word/backup workflows plus invalid and stale cases. |
+| Intended devices and real deployment path, where applicable | Passed with stated limits — Chrome preview and hosted v0.4 verified; Microsoft Word desktop and physical printing were not tested. |
+| Version, release notes and delivered bytes agree | Passed — v0.4.0 / Blueprint 4.8.0 / contract v4 and the portable artifact hash agree. |
 
 The next build report must name the candidate, environment and test results; historical reports of passing tests do not transfer to a changed candidate.
 
 ## 8. Handoff and provenance
 
-Current source identity is recorded in [`MIGRATION-BASELINE.md`](MIGRATION-BASELINE.md). That manifest supersedes earlier unknown-source or pre-upload statements while preserving the original migration note as history.
+Current source identity is recorded in [`MIGRATION-BASELINE.md`](MIGRATION-BASELINE.md). That manifest supersedes the v0.3-only baseline while preserving it as history.
 
-Required project records: committed `AAC_Studio_v0.3.html`; AAC_Studio_V0.4_Consolidated_Repair_Specification.md; locked finals, catalogs, packets, repair manifests and blueprint history. The v0.4 specification does not establish a v0.4 implementation.
+Required project records: committed `AAC_Studio_v0.3.html`; committed `AAC_Studio_v0.4.html`; `AAC_Studio_V0.4_Consolidated_Repair_Specification.md`; complete source; release reports; locked finals, catalogs, packets, repair manifests and blueprint history.
 
 Provenance: previous migration brief and project-history audit in this conversation; directly read dossier/proposal where explicitly stated above. Records not explicitly marked read here are retrieval targets, not claims of fresh inspection. No current app code was tested for this brief.
 
