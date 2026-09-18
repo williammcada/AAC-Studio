@@ -1,20 +1,16 @@
 # Migration Note — AAC Studio
 
-**Prepared:** 18 September 2026
+**Prepared:** 18 September 2026  
+**Status:** Historical migration note; source-status section superseded on 18 September 2026.
 
-This file records the initial move from chat-centered project history toward a repository-centered canonical record.
+The canonical source identity is now recorded in [`MIGRATION-BASELINE.md`](MIGRATION-BASELINE.md). Earlier statements that the source, filename, version or repository checkpoint was “TO ESTABLISH” are no longer current.
 
-## Source status at migration
+## Resolved source status
 
-Latest discussed target/build is AAC Studio v0.4; canonical source artifact is TO ESTABLISH from the latest known-good local build.
+Canonical preserved source: `AAC_Studio_v0.3.html`, Git blob `3bf9020d0e080c8188f93b787d4e970f26b2f264`, at source checkpoint `76d9c85f634025b3d75970fc4d827b8467f54ba1`. This establishes the uploaded v0.3 artifact only; v0.4 remains a specification/target, not the delivered build.
 
-## What to do next
+## Remaining work
 
-1. Identify the exact latest known-good source artifact.
-2. Place/confirm it in this repository.
-3. Update `PROJECT-BRIEF.md` with the exact version/commit.
-4. Copy any unique approved historical specification that is still needed into `docs/change-specs/`.
-5. Verify the repository source can be opened/built/deployed as appropriate.
-6. Only after unique project state is safely preserved should historical monster chats be treated as disposable.
+Use the committed v0.3 source as the preservation baseline. Reconcile any future v0.4 implementation against the approved v0.4 specification before changing the app.
 
-This migration note is not a release specification and does not authorize new features.
+This note is not a release specification and does not authorize new features. Functional, device and deployment verification remain separate from source preservation.
