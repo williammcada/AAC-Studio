@@ -25,3 +25,5 @@ For a pre-versioned project, use a descriptive draft name only until a version i
 9. Record the result in the project brief.
 
 Historical chats are useful working context, but they are not the canonical specification once an approved change file exists.
+
+Current specification: [v0.5-AUDIT-REPAIRS.md](v0.5-AUDIT-REPAIRS.md). The complete audit is preserved under `docs/audits/`; current verification limits are in `docs/releases/0.5-release.md`.

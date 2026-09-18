@@ -42,3 +42,9 @@ The previous v0.3 source baseline remains preserved as `AAC_Studio_v0.3.html` at
 ## Next gate
 
 Begin v0.5 only from this verified baseline. Create and approve a versioned change specification before implementation; preserve an implementation checkpoint before extended testing; then record the exact verified candidate before release and deployment.
+
+## V0.5 successor — 2026-09-18
+
+This section supersedes the earlier active-source designation; earlier entries remain historical. Current deliverable: `AAC_Studio_v0.5.html`, Studio 0.5.0 / Blueprint 4.9.0 / contract v5. Complete source: `AAC_Studio_v0.5_source.zip`. Status: **tested release candidate**, not browser-verified release. Consult [the release record](releases/0.5-release.md) for exact hashes and evidence.
+
+Baseline retrieved from canonical commit `c4c4acf57b73a1e10fe75b53b86e4c4a0cf3ea84`. The archived v0.4 source and portable file remain unchanged. The migration preserves Blueprint 4.8 as an immutable snapshot, adds explicit v0.4 backup restoration, and requires new packets for modified contracts. No hosted deployment occurred.

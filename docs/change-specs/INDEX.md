@@ -1,7 +1,7 @@
-# Change specifications — AAC Studio
+# Change specification index
 
-| File | Status | Scope |
-| --- | --- | --- |
-| `AAC_Studio_V0.4_Consolidated_Repair_Specification.md` | Implemented in v0.4 | Consolidated A01–A16 bank, contract, packet, import and export repairs |
-| `v0.4-ASSESSMENT-CONTRACT.md` | Accepted product constraints | AAC form generation, validation, and import/export |
-| [`MIGRATION-BASELINE.md`](../MIGRATION-BASELINE.md) | Current source-identity record | Exact source path, Git object identity, artifact hash and verification limits |
+- [v0.5 permanent iteration-audit repairs](v0.5-AUDIT-REPAIRS.md) — authorized 2026-09-18; implemented, tested release candidate; desktop browser verification pending.
+- [v0.4 consolidated repair specification](AAC_Studio_V0.4_Consolidated_Repair_Specification.md) — previous implemented release.
+- [v0.4 assessment contract](v0.4-ASSESSMENT-CONTRACT.md) — historical context.
+- [Current project brief](../PROJECT-BRIEF.md)
+- [Source and migration baseline](../MIGRATION-BASELINE.md)
